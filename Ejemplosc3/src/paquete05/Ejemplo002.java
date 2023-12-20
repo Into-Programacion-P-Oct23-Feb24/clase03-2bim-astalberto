@@ -24,7 +24,7 @@ public class Ejemplo002 {
         
         // Analizamos y concluimos que las posiciones del arreglo que tenemos 
         // que sumar son iguales [0,0] [1,1] [2,2] asi que creamos una condicion 
-        //que analize las filas y columnas y que si son equivalentes se sumen
+        // que analize las filas y columnas y que si son equivalentes se sumen
     }
 
 }
