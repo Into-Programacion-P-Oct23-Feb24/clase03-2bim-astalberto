@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo02 {
+public class Ejemplo022 {
 
     /**
      * @param args the command line arguments
@@ -39,7 +39,11 @@ public class Ejemplo02 {
                         i,
                         j);
                 valor = entrada.nextInt();
-                arreglo1[i][j] = valor;
+                if (valor >= 10 && valor % 2 == 0) {
+                    arreglo1[i][j] = 0;
+                } else {
+                    arreglo1[i][j] = valor;
+                }
             }
         }
 
