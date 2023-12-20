@@ -12,7 +12,7 @@ public class Ejemplo001 {
 
     public static void main(String[] args) {
         int[] arreglo1 = new int[2];
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < arreglo1.length; i++) {
             System.out.println("fila " + i + " = " + arreglo1[i] + "\n");
         }
     }
