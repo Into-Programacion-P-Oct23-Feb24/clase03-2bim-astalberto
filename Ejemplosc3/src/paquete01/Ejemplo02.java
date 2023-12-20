@@ -5,6 +5,9 @@
  */
 package paquete01;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -16,6 +19,9 @@ public class Ejemplo02 {
      */
     public static void main(String[] args) {
         // Creación de arreglo bidimensionales
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+
         
         // forma 1
         int[][] arreglo1 = new int[3][4]; //
@@ -25,6 +31,12 @@ public class Ejemplo02 {
        
         arreglo1[0][2] = 1000;
         
+        for (int i = 0; i < arreglo1.length; i++) {
+            for (int j = 0; j < arreglo1[i].length; j++) {
+                System.out.printf("Ingrese el valor de [%d][%d]\n",i,j);
+                arreglo1[i][j]= entrada.nextInt();
+            }
+        }
                
         for (int fila = 0; fila < arreglo1.length; fila++) {
             for (int col = 0; col < arreglo1[fila].length; col++) {
